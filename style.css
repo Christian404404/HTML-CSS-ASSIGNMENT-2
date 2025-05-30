@@ -1,65 +1,113 @@
 /* gh repo create my-repo-name --public --source=. --remote=origin --push */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(72, 72, 72);
+}
+
+/* body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+main,
+section,
+article,
+header,
+footer {
+  margin: 0;
+  padding: 0;
+} */
+
 * {
+  display: flex;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* .container {
+body {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0px;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 300px;
-} */
+  height: 98svh;
+  width: 98svw;
+}
+
+title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 25px;
   justify-content: center;
-  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
 }
 
-/* article {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-} */
-
 article {
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: auto;
   height: auto;
   padding: 20px;
   color: white;
-  border-radius: 8px;
+  /* these need to be set on the individual elements
+  as of now when it's on all, it's not working
+  properly like in the example desktop-design.jpg
+  Sedan has top and bottom left, Luxury opposite, SUVS has none.
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  */
+  /* border-radius: 5px; */
 }
 
 button {
+  font-size: 15px;
+  font-family: Lexend, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 30px;
+  align-items: left;
+  justify-content: left;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  flex: space-between;
+  padding: 10px;
   background-color: white;
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
+}
+
+#luxuryButton {
+  color: hsl(179, 100%, 13%);
+}
+
+#sedanButton {
+  color: hsl(31, 77%, 52%);
+}
+
+#suvButton {
+  color: hsl(184, 100%, 22%);
 }
 
 .SEDAN {
   background-color: hsl(31, 77%, 52%);
   color: white;
+  border-radius: 5px 0 0 5px;
 }
 
 #sedanInfo {
@@ -70,13 +118,15 @@ button {
 .SUVS {
   background-color: hsl(184, 100%, 22%);
   color: white;
+  border-radius: 0px;
 }
 
-suvInfo {
+#suvInfo {
   background-color: hsl(184, 100%, 22%);
 }
 
 .LUXURY {
   background-color: hsl(179, 100%, 13%);
   color: white;
+  border-radius: 0px 5px 5px 0px;
 }
