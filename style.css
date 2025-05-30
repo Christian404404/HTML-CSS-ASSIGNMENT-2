@@ -1,29 +1,32 @@
 * {
-  background-color: whitesmoke;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.grandparent {
+#cars {
   display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+  /* text-align: center; */
+  /* align-items: center; */
   justify-content: center;
-  align-items: center;
+  gap: 20px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
 }
 
-.parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+#SEDAN {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
 }
 
-.child {
-  width: 50%;
-  height: 50%;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#SUVS {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+
+#LUXURY {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
 }

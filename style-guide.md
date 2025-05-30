@@ -21,12 +21,12 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
 ### Font
 
-<!-- Undertekst og knapp til tekst -->
+<!-- Undertekst og knapp tekst -->
 
 - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
 - Weights: 400
 
-<!-- Overskift/navn på bil -->
+<!-- Overskift/navn på bil/type -->
 
 - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders?query=big+shoulders+display)
 - Weights: 700
