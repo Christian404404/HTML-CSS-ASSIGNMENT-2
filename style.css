@@ -50,6 +50,7 @@ body {
 
 article {
   max-width: 1000px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,8 +101,12 @@ button {
 .SEDAN,
 .SUVS,
 .LUXURY {
-  font-family: "Big-Shoulders";
+  font-family: "Big Shoulders";
   font-weight: 700;
+  color: white;
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
 }
 
 #sedanButton,
@@ -110,25 +115,22 @@ button {
 #sedanInfo,
 #suvInfo,
 #luxuryInfo {
-  font-family: "Lexend", sans-serif;
+  font-family: "Lexend deca";
   font-size: 15px;
   font-weight: 400;
 }
 
 .SEDAN {
   background-color: hsl(31, 77%, 52%);
-  color: white;
   border-radius: 5px 0 0 5px;
 }
 
 #sedanInfo {
   background-color: hsl(31, 77%, 52%);
-  color: white;
 }
 
 .SUVS {
   background-color: hsl(184, 100%, 22%);
-  color: white;
   border-radius: 0px;
 }
 
@@ -138,7 +140,6 @@ button {
 
 .LUXURY {
   background-color: hsl(179, 100%, 13%);
-  color: white;
   border-radius: 0px 5px 5px 0px;
 }
 
