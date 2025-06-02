@@ -70,7 +70,7 @@ article {
 
 button {
   font-size: 15px;
-  font-family: Lexend, sans-serif;
+  font-family: "Lexend Deca";
   display: flex;
   flex-direction: column;
   width: auto;
@@ -147,7 +147,7 @@ button {
 #luxuryInfo,
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  padding: 20px;
+  padding: 20px 20px 35px 20px;
   display: flex;
   align-self: flex-start;
   text-align: left;
